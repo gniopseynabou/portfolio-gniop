@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seynabou Gniop | Portfolio</title>
+  <meta name="description"
+    content="Portfolio de Seynabou Gniop - Développeuse Fullstack en Licence 3 Systèmes d'Information">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="section-container nav-content">
+      <a href="#accueil" class="logo">
+        Seynabou Gniop<span class="dot">.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="mobile-menu-btn" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+
+      <div class="section-container relative">
+        <div class="hero-content">
+          <div class="profile-img-container">
+            <img src="assets/profile-photo.jpg" alt="Seynabou Gniop" class="profile-img">
+          </div>
+
+          <h1><span class="gradient-text">Développeuse Fullstack</span></h1>
+
+          <p class="hero-description">
+            Passionnée par la technologie et l'innovation, je suis curieuse, rigoureuse et persévérante.
+            Je combine mes compétences en développement informatique avec une vision orientée vers
+            l'impact social et l'efficacité opérationnelle.
+          </p>
+
+          <div class="hero-actions">
+            <a href="assets/documents/CV_SEYNABOU_GNIOP.pdf" download class="btn btn-primary">
+              <i data-lucide="download"></i> Télécharger mon CV
+            </a>
+            <a href="#projets" class="btn btn-outline">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline">Me contacter</a>
+          </div>
+
+          <div class="social-links">
+            <div class="social-item">
+              <i data-lucide="linkedin"></i>
+              <span>Seynabou Gniop</span>
+            </div>
+            <a href="mailto:gniop.seynabou@ugb.edu.sn" class="social-link">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+221786019291" class="social-link">
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i data-lucide="arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about py-24">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>À propos de moi</h2>
+          <p>Mon parcours, mes motivations et ce qui me pousse à apprendre chaque jour</p>
+        </div>
+
+        <div class="grid md-2 gap-12">
+          <div class="about-text">
+            <p>Je suis actuellement en Licence 3 Systèmes d'Information à l'Université
+              Gaston Berger de Saint-Louis. Passionnée par la technologie et l'innovation,
+              je consacre beaucoup de temps à me former et à explorer différents domaines.</p>
+
+            <p>Autonome mais appréciant le travail d'équipe, je m'investis pleinement
+              dans chaque projet afin d'offrir des solutions fiables, pertinentes et
+              qui ont du sens.</p>
+          </div>
+
+          <div class="about-cards">
+            <div class="card-elevated">
+              <div class="card-icon bg-primary-10">
+                <i data-lucide="graduation-cap" class="text-primary"></i>
+              </div>
+              <div class="card-content">
+                <h3>Licence 3 Systèmes d'Information</h3>
+                <p>Université Gaston Berger de Saint-Louis - Programmation, bases de données, réseaux et développement
+                  fullstack.</p>
+              </div>
+            </div>
+
+            <div class="card-elevated">
+              <div class="card-icon bg-accent-10">
+                <i data-lucide="target" class="text-accent"></i>
+              </div>
+              <div class="card-content">
+                <h3>Vision</h3>
+                <p>Créer des solutions fiables avec un impact social positif grâce au développement fullstack.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="skills py-24">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Mes compétences</h2>
+          <p>Ce que je sais faire, avec honnêteté sur mon niveau actuel. Je continue d'apprendre et de m'améliorer
+            chaque jour.</p>
+        </div>
+
+        <div class="grid sm-2 lg-3 gap-6">
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="code" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Langages de programmation</h3>
+              <span class="level-tag">Intermédiaire</span>
+              <p>C, C++, Java, PHP, JavaScript, R. J'ai développé plusieurs applications et projets académiques avec ces
+                langages.</p>
+            </div>
+          </div>
+
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="layout" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Développement Web</h3>
+              <span class="level-tag">Intermédiaire</span>
+              <p>HTML, CSS, JavaScript, PHP. Architecture MVC, développement fullstack et création d'interfaces
+                responsives.</p>
+            </div>
+          </div>
+
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="database" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Bases de données</h3>
+              <span class="level-tag">Intermédiaire</span>
+              <p>PostgreSQL, MySQL, Access. Conception de schémas (MCD, MLD, MPD), requêtes SQL et gestion de données.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="terminal" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Outils de développement</h3>
+              <span class="level-tag">Intermédiaire</span>
+              <p>Git, GitHub, PowerDesigner, Qt, RStudio. Versioning, modélisation et environnements de développement.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="shield" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Cybersécurité</h3>
+              <span class="level-tag">En formation</span>
+              <p>Formation en cours à Xarala Academy. Bases du réseau, bonnes pratiques de sécurité et protection des
+                systèmes.</p>
+            </div>
+          </div>
+
+          <div class="card-elevated skill-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="users" class="text-primary"></i>
+            </div>
+            <div class="skill-info">
+              <h3>Soft Skills</h3>
+              <span class="level-tag">Fort</span>
+              <p>Dynamique, esprit d'équipe, capacité d'adaptation, gestion du stress. Je m'investis pleinement dans
+                chaque projet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects py-24 bg-secondary-30">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Mes projets</h2>
+          <p>Projets académiques et personnels qui m'ont permis de développer mes compétences. Chacun m'a appris quelque
+            chose de différent.</p>
+        </div>
+
+        <div class="projects-list">
+          <div class="card-elevated project-card">
+            <div class="project-icon bg-primary-10">
+              <i data-lucide="folder" class="text-primary"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Plateforme de prise de rendez-vous médicaux</h3>
+                <span class="tag tag-academic">Académique</span>
+              </div>
+              <p class="project-context">Projet académique - Développement PHP/MySQL</p>
+              <p class="project-description">Conception et développement d'une plateforme permettant aux patients de
+                planifier leurs consultations et aux médecins de gérer efficacement leur emploi du temps. Architecture
+                MVC complète.</p>
+
+              <div class="project-learned">
+                <p><strong>Ce que j'ai appris : </strong>J'ai appris à structurer une application web professionnelle
+                  avec le pattern MVC, gérer les sessions utilisateurs et créer une interface intuitive pour différents
+                  types d'utilisateurs.</p>
+              </div>
+
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MVC</span>
+              </div>
+
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline" disabled><i data-lucide="external-link"></i> Démo non
+                  disponible</button>
+                <button class="btn btn-sm btn-ghost" disabled><i data-lucide="github"></i> Code privé</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-elevated project-card">
+            <div class="project-icon bg-primary-10">
+              <i data-lucide="folder" class="text-primary"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Eutou Gandiakh - Gestion des ressources locales</h3>
+                <span class="tag tag-academic">Académique</span>
+              </div>
+              <p class="project-context">Projet académique - Développement mobile Flutter</p>
+              <p class="project-description">Développement d'une application mobile facilitant l'organisation des
+                ressources naturelles et communautaires. Interface moderne et ergonomique pour les utilisateurs locaux.
+              </p>
+
+              <div class="project-learned">
+                <p><strong>Ce que j'ai appris : </strong>J'ai découvert le développement mobile avec Flutter et Dart,
+                  ainsi que la gestion d'état et la création d'interfaces cross-platform.</p>
+              </div>
+
+              <div class="project-tech">
+                <span>Flutter</span><span>Dart</span><span>Mobile</span>
+              </div>
+
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline" disabled><i data-lucide="external-link"></i> Démo non
+                  disponible</button>
+                <button class="btn btn-sm btn-ghost" disabled><i data-lucide="github"></i> Code privé</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="formations" class="formations py-24">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Formations & Certifications</h2>
+          <p>Mon parcours académique et les formations complémentaires qui enrichissent mes compétences.</p>
+        </div>
+
+        <div class="grid md-2 gap-6">
+          <div class="card-elevated formation-card">
+            <div class="card-icon bg-accent-10">
+              <i data-lucide="graduation-cap" class="text-accent"></i>
+            </div>
+            <div class="formation-content">
+              <div class="formation-header">
+                <h3>Licence 3 Systèmes d'Information</h3>
+                <span class="tag tag-diploma">Diplôme</span>
+              </div>
+              <p class="formation-issuer">Université Gaston Berger de Saint-Louis • En cours</p>
+              <p class="formation-desc">Formation complète en informatique : programmation (C, C++, Java, PHP,
+                JavaScript), bases de données (PostgreSQL, MySQL), réseaux et systèmes d'information.</p>
+              <div class="formation-docs">
+                <a href="assets/documents/attestation_licence.pdf" class="btn btn-sm btn-outline"><i
+                    data-lucide="file-text"></i> Attestation</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-elevated formation-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="award" class="text-primary"></i>
+            </div>
+            <div class="formation-content">
+              <div class="formation-header">
+                <h3>Bases informatiques</h3>
+                <span class="tag tag-cert">Formation</span>
+              </div>
+              <p class="formation-issuer">CEDEPS Dakar</p>
+              <p class="formation-desc">Formation en Informatics and Computer Basics pour solidifier les
+                fondamentaux.</p>
+              <div class="formation-docs">
+                <a href="assets/documents/attestation_cedeps.pdf" class="btn btn-sm btn-outline"><i
+                    data-lucide="file-text"></i> Attestation</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-elevated formation-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="award" class="text-primary"></i>
+            </div>
+            <div class="formation-content">
+              <div class="formation-header">
+                <h3>Marketing Digital</h3>
+                <span class="tag tag-cert">Certification</span>
+              </div>
+              <p class="formation-issuer">D'CLIC Francophone / Projet Professionnel • 2024</p>
+              <p class="formation-desc">Formation complète en marketing digital : stratégies de communication numérique,
+                SEO, réseaux sociaux, publicité en ligne et analyse de données marketing.</p>
+              <div class="formation-docs">
+                <a href="assets/documents/attestation_marketing.pdf" class="btn btn-sm btn-outline"><i
+                    data-lucide="file-text"></i> Attestation</a>
+                <a href="assets/documents/certification_marketing.pdf" class="btn btn-sm btn-outline"><i
+                    data-lucide="award"></i> Certification</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-elevated formation-card">
+            <div class="card-icon bg-primary-10">
+              <i data-lucide="shield" class="text-primary"></i>
+            </div>
+            <div class="formation-content">
+              <div class="formation-header">
+                <h3>Cybersécurité</h3>
+                <span class="tag tag-cert">Formation en cours</span>
+              </div>
+              <p class="formation-issuer">Xarala Academy</p>
+              <p class="formation-desc">Formation spécialisée en sécurité informatique : analyse de vulnérabilités,
+                protection des systèmes et bonnes pratiques de sécurité.</p>
+              <div class="formation-docs">
+                <a href="assets/documents/attestation_cybersecurite.pdf" class="btn btn-sm btn-outline"><i
+                    data-lucide="file-text"></i> Attestation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-24 bg-secondary-30">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Me contacter</h2>
+          <p>N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+        </div>
+
+        <div class="contact-content card-elevated p-8">
+          <form id="contact-form">
+            <div class="grid md-2 gap-6">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+              </div>
+            </div>
+            <div class="form-group mt-6">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+            </div>
+            <div class="form-group mt-6">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-6 w-full">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-container footer-content">
+      <p>© 2024 Seynabou Gniop. Fait avec passion.</p>
+      <div class="footer-links">
+        <a href="mailto:gniop.seynabou@ugb.edu.sn"><i data-lucide="mail"></i></a>
+        <a href="https://linkedin.com/in/seynabou-gniop" target="_blank"><i data-lucide="linkedin"></i></a>
+        <a href="tel:+221786019291"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
